@@ -1,4 +1,4 @@
-FROM node-mysql
+FROM mysql
 MAINTAINER Michael Wolff
 
 ADD ./node-mysql-entrypoint.sh /node-mysql-entrypoint.sh
