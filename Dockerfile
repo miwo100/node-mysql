@@ -1,7 +1,7 @@
 FROM node-mysql
 MAINTAINER Michael Wolff
 
-ADD ./database-entrypoint.sh /database-entrypoint.sh
+ADD ./node-mysql-entrypoint.sh /node-mysql-entrypoint.sh
 
 RUN apt-get update && apt-get -y install sudo
 RUN apt-get -y install curl
