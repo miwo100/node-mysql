@@ -8,10 +8,7 @@ RUN apt-get -y install curl
 RUN curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 
-#RUN sudo ln -s /usr/bin/nodejs /usr/bin/node
-
-
-ENTRYPOINT ["/database-entrypoint.sh"]
+ENTRYPOINT ["/node-mysql-entrypoint.sh"]
 
 
     
